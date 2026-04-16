@@ -1,6 +1,6 @@
 import './globals.css'
 import type { Metadata } from 'next'
-import { Lato, Inter } from 'next/font/google'
+import { Bebas_Neue, Inter } from 'next/font/google'
 import { Providers } from './providers'
 import Header from '@/components/layout/header'
 import Footer from '@/components/layout/footer'
@@ -14,9 +14,9 @@ import dynamic from 'next/dynamic'
 
 const CookieConsent = dynamic(() => import('@/components/cookie-consent'))
 
-const heading = Lato({
+const heading = Bebas_Neue({
   subsets: ['latin'],
-  weight: ['400', '700'],
+  weight: ['400'],
   variable: '--font-heading',
   display: 'swap',
 })
@@ -30,10 +30,10 @@ const body = Inter({
 
 export const metadata: Metadata = {
   title: {
-    default: 'Store — Modern Commerce',
-    template: '%s | Store',
+    default: 'KickOff 2026 — Official FIFA World Cup Fan Gear',
+    template: '%s | KickOff 2026',
   },
-  description: 'Discover curated products crafted with care. A modern ecommerce experience.',
+  description: 'Official FIFA World Cup 2026 fan merchandise. Jerseys, scarves, flags and more. USA | Canada | Mexico. Get yours before the tournament kicks off.',
 }
 
 export default function RootLayout({
